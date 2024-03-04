@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserva</title>
+  </head>
+
+  <body>
+    <section>
+      <h1>Reservas</h1>
+      <form method="GET" action="">
+        <fieldset>
+          <label>Nome</label><br />
+          <input type="text" name="Nome" /><br />
+          <label>Email</label><br />
+          <input type="email" required name="Email" /><br />
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <legend>Serviços Desejados</legend>
+          <label>Compra de passagens</label>
+          <input type="checkbox" name="comprapassagens" />
+          <label>Reserva de Hospedagem</label>
+          <input type="checkbox" name="reserhospedagem" />
+          <label>Aluguel de Veículos</label>
+          <input type="checkbox" name="alveiculo" />
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <legend>Forma de Pagamento</legend>
+          <label>
+            <input
+              type="radio"
+              name="formapgto"
+              value="CartãodeCrédito"
+            />Cartão de Crédito
+          </label>
+          <label>
+            <input type="radio" name="formapgto" value="Boleto" />Boleto
+          </label>
+          <label>
+            <input type="radio" name="formapgto" value="Pix" />Pix
+          </label>
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <legend>Prazo de Pagamento</legend>
+          <select name="PrazoPgto">
+            <option value="ÁVista" selected>Á Vista</option>
+            <option value="2x">2X sem Juros</option>
+            <option value="3x">3X sem Juros</option>
+            <option value="4x">4X sem Juros</option>
+            <option value="5x">5X sem Juros</option>
+            <option value="6x">6x Com Juros</option>
+            <option value="7x">7x Com Juros</option>
+            <option value="8x">8x Com Juros</option>
+            <option value="9x">9x Com Juros</option>
+            <option value="10x">10x Com Juros</option>
+          </select>
+        </fieldset>
+        <br /><button>Enviar</button>
+      </form>
+    </section>
+
+  </br><footer>Desenvolvido por Eduardo Avila</footer>
+  </body>
+</html>
